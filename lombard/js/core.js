@@ -47,5 +47,14 @@ $(function(){
 		  behavior: 'smooth' 
 		});
     });
+
+    $(".socials-link").on("click", function(event){
+    	event.preventDefault();
+    	window.scroll({
+		  top: 1600, 
+		  left: 0, 
+		  behavior: 'smooth' 
+		});
+    });
 });
 
