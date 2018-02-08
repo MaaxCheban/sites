@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDcqRwm5JlzS9iMdaLyJn-s383akTgZyA&callback=initMap"></script>
+<script src="js/core.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="header-wrapper">
+			<div class="header center-page">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="nav">
+					<a href="#" class='about-company-link'>Про ломбард</a>
+					<a href="#" class='contact-link'>Контакти</a>
+					<a href="#" class="find-us-link">Як нас знайти</a>
+				</div>
+				<div class="address">
+					<p><a href="#" class="find-us-link">м. Львів, вул. Шолом-Алейхема, буд. 13</a></p>
+					<p>С 10.00 ДО 18.00 кожного дня</p>
+			</div>
+				<div class="number-header">
+					<p>Номери телефона</p>
+					<p>
+						<a href="tel:8800000000">+380 631 38 3427</a>
+					</p>
+					<p>
+						<a href="tel:8800000000">+380 322 60 0818</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="supply-wrapper">
+			<div class="supply center-page">
+				<!--<div class="supply-descr">
+					<h1>Викуп дорогоцінних речей</h1>
+					<h3>У «КДК-ломбарді» ви можете отримати гроші за:
+вироби з дорогоцінних металів, діаманти, колекційні монети, ордени, картини, ікони, скульптури чи інші мистецькі цінності,
+годинники, старовинні та антикварні речі;</h3>
+
+					<a href="#" class="connect-link">Зв'язатись з нами</a>
+				</div>-->
+			</div>
+		</div>
+
+		<div class="advantages-wrapper">
+			<div class="advantages center-page">
+				<div class="advantages-header">
+					<h1>Про ломбард</h1>
+					<p>Завдяки багаторічному досвіду роботи «КДК-ломбарду» та нашій відмінній репутації, ви можете бути впевнені, що ваше майно збережуть в цілісності до обумовленої дати викупу. Умови співпраці з нашим ломбардом прості, зрозумілі та максимально вигідні для вас. Ви приносите до нас речі, ми проводимо їх оцінку і віддаємо вам гроші. Після цього, ви через певний час, можете повернути свої цінності. За таку вигідну для вас оборудку ми беремо практично символічну оплату: лише від 0,33 % за один день зберігання.</p>
+				</div>
+				<div class ="tabs">
+					  <ul>
+					    <li><a href="#tabs-1">Як ми працюємо?</a></li>
+					    <li><a href="#tabs-2">Що ми приймаємо?</a></li>
+					    <li><a href="#tabs-3">Як платити?</a></li>
+					  </ul>
+					  <div class="tabs-content">
+					  		<div id="tabs-1">
+					  			<div class="tabs-row">
+						  			<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-fast"></span>
+						    			<h4>Швидко та професійно</h4>
+						    			<p>Наши эксперты всего за несколько минут оценят ваше изделие с помощью современного профессионального оборудования.</p>
+						    		</div>
+						    		<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-incomedoc"></span>
+						    			<h4>Без справок о доходе</h4>
+						    			<p>Вы должны быть старше 18 лет и иметь при себе паспорт. Больше никаких документов не требуется.</p>
+						    		</div>
+						  			<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-safety"></span>
+						    			<h4>Безопасно и конфиденциально</h4>
+						    			<p>Все принимаемые изделия хранятся в специальных сейфах и застрахованы.</p>
+						    		</div>
+					  			</div>
+					  		</div>
+						  <div id="tabs-2">
+					  			<div class="tabs-row">
+						  			<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-fast"></span>
+						    			<h4>Вироби з дорогоцінних металів і діаманти</h4>
+						    			<p>Наши эксперты всего за несколько минут оценят ваше изделие с помощью современного профессионального оборудования.</p>
+						    		</div>
+						    		<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-summary"></span>
+						    			<h4>Колекційні монети чи ордени,різноманітну техніку (відео-, фототехніку, побутову або комп’ютерну техніку тощо)</h4>
+						    			<p>Оценка ювелирного изделия производится товароведом по действующему Прейскуранту на день обращения в ломбард.</p>
+						    		</div>
+						  			<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-good"></span>
+						    			<h4>Картини, ікони, годинники, старовинні та антикварні речі, cкульптури чи інші мистецькі цінності</h4>
+						    			<p>Наши эксперты всего за несколько минут оценят ваше изделие с помощью современного профессионального оборудования.</p>
+						    		</div>
+					  			</div>
+						  </div>
+						  <div id="tabs-3">
+					  			<div class="tabs-row">
+						  			<div class="tab-item">
+						    			<span class="tab-item-img tab-item-img-loans-wallet"></span>
+						    			<h4>Наличными</h4>
+						    			<p>В том ломбарде, где был оформлен залоговый билет.</p>
+						    		</div>
+					  			</div>
+						  </div>
+					  </div>
+					</div>
+
+
+				<!--<div class="advantages-enum">
+					<div class="advantage-item">
+						<div class="advantage-item-img">
+							<img src="svg/dollar.svg">
+						</div>
+						<div class="advantage-item-text">
+							<p>Максимальная оценка</p>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item-img">
+							<img src="svg/bar-chart.svg">
+						</div>
+						<div class="advantage-item-text">
+							<p>Самые низкие % ставки</p>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item-img">
+							<img src="svg/calendar.svg">
+						</div>
+						<div class="advantage-item-text">
+							<p>Гибкий график платежей</p>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item-img">
+							<img src="img/fast-cash.png" alt="">
+						</div>
+						<div class="advantage-item-text">
+							<p>Наличные за 30 минут</p>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="price-factors-enum">
+					<h1 class="price-factors-header">На оценочную стоимость вещей будут влиять следующие факторы:</h1>
+					<div class="price-factor-item">
+						<div class="price-factor-item-img">
+							<img src="img/brand.png" alt="">
+						</div>
+						<div class="price-factor-item-text">
+							<p>Марка изделия</p>
+						</div>
+					</div>
+					<div class="price-factor-item">
+						<div class="price-factor-item-img">
+							<img src="img/state.png" alt="">
+						</div>
+						<div class="price-factor-item-text">
+							<p>Состояние</p>
+						</div>
+					</div>
+					<div class="price-factor-item">
+						<div class="price-factor-item-img">
+							<img src="img/box&docs.png" alt="">
+						</div>
+						<div class="price-factor-item-text">
+							<p>Наличие упаковочной коробки</p>
+							<p> и документов</p> 
+							<p>(паспорт и гарантийный талон)</p>
+						</div>
+					</div>
+					<div class="price-factor-item">
+						<div class="price-factor-item-img">
+							<img src="img/age.png" alt="">
+						</div>
+						<div class="price-factor-item-text">
+							<p>Возраст изделия</p>
+						</div>
+					</div>
+					<div class="price-factor-item">
+						<div class="price-factor-item-img">
+							<img src="img/material.png" alt="">
+						</div>
+						<div class="price-factor-item-text">
+							<p>Материал изделия</p>
+						</div>
+					</div>
+				</div>-->
+			</div>		
+		</div>
+
+		<div class="contacts-wrapper">
+			<div class="contacts center-page">
+				<p class="contacts-call-us">Звоніть кожного дня з 10:00 до 21:00</p>
+				<p class="contacts-number">+380 631 38 3427</p>
+				<p class="contacts-number">+380 322 60 0818</p>
+				<p class="contacts-describtion">
+Отримайте гроші у нашому ломбарді швидко та легко. Ми, у свою чергу, гарантуємо вам високу ціну за ваше майно та прозорість співпраці! 	    </p>
+			</div>
+		</div>
+
+		<div id="google-map"></div>
+
+		<div class="footer-wrapper">
+			<div class="footer center-page">
+				<div class="footer-logo"><img src="img/logo2.png" alt=""></div>
+				<p class="footer-address">Львівська обл., м. Львів, вул. Шолом-Алейхема, буд. 13</p>
+				<p>С 10.00 ДО 21.00 ЕЖЕДНЕВНО</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<!--XxE5f22tNhO3Vc5cjYhS-->
